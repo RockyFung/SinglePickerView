@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0600021CACF47800028541 /* FJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0600011CACF47800028541 /* FJPickerView.m */; };
 		5CE84C5F1CAB874E002A9D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C5E1CAB874E002A9D1A /* main.m */; };
 		5CE84C621CAB874E002A9D1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C611CAB874E002A9D1A /* AppDelegate.m */; };
 		5CE84C651CAB874E002A9D1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C641CAB874E002A9D1A /* ViewController.m */; };
@@ -15,6 +16,8 @@
 		5CE84C6D1CAB874E002A9D1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE84C6B1CAB874E002A9D1A /* LaunchScreen.storyboard */; };
 		5CE84C781CAB874E002A9D1A /* FJPickerVIewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C771CAB874E002A9D1A /* FJPickerVIewTests.m */; };
 		5CE84C831CAB874E002A9D1A /* FJPickerVIewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C821CAB874E002A9D1A /* FJPickerVIewUITests.m */; };
+		5CE84C991CAB87BF002A9D1A /* FJSinglePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C971CAB87BF002A9D1A /* FJSinglePickerView.m */; };
+		5CE84C9A1CAB87BF002A9D1A /* FJSinglePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE84C981CAB87BF002A9D1A /* FJSinglePickerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C0600001CACF47800028541 /* FJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPickerView.h; sourceTree = "<group>"; };
+		5C0600011CACF47800028541 /* FJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPickerView.m; sourceTree = "<group>"; };
 		5CE84C5A1CAB874E002A9D1A /* FJPickerVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJPickerVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE84C5E1CAB874E002A9D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CE84C601CAB874E002A9D1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		5CE84C7E1CAB874E002A9D1A /* FJPickerVIewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FJPickerVIewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE84C821CAB874E002A9D1A /* FJPickerVIewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJPickerVIewUITests.m; sourceTree = "<group>"; };
 		5CE84C841CAB874E002A9D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE84C961CAB87BF002A9D1A /* FJSinglePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSinglePickerView.h; sourceTree = "<group>"; };
+		5CE84C971CAB87BF002A9D1A /* FJSinglePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSinglePickerView.m; sourceTree = "<group>"; };
+		5CE84C981CAB87BF002A9D1A /* FJSinglePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJSinglePickerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		5CE84C5C1CAB874E002A9D1A /* FJPickerVIew */ = {
 			isa = PBXGroup;
 			children = (
+				5CE84C951CAB87BF002A9D1A /* SinglePickerView */,
 				5CE84C601CAB874E002A9D1A /* AppDelegate.h */,
 				5CE84C611CAB874E002A9D1A /* AppDelegate.m */,
 				5CE84C631CAB874E002A9D1A /* ViewController.h */,
@@ -138,6 +147,18 @@
 				5CE84C841CAB874E002A9D1A /* Info.plist */,
 			);
 			path = FJPickerVIewUITests;
+			sourceTree = "<group>";
+		};
+		5CE84C951CAB87BF002A9D1A /* SinglePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				5CE84C961CAB87BF002A9D1A /* FJSinglePickerView.h */,
+				5CE84C971CAB87BF002A9D1A /* FJSinglePickerView.m */,
+				5CE84C981CAB87BF002A9D1A /* FJSinglePickerView.xib */,
+				5C0600001CACF47800028541 /* FJPickerView.h */,
+				5C0600011CACF47800028541 /* FJPickerView.m */,
+			);
+			path = SinglePickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +266,7 @@
 			files = (
 				5CE84C6D1CAB874E002A9D1A /* LaunchScreen.storyboard in Resources */,
 				5CE84C6A1CAB874E002A9D1A /* Assets.xcassets in Resources */,
+				5CE84C9A1CAB87BF002A9D1A /* FJSinglePickerView.xib in Resources */,
 				5CE84C681CAB874E002A9D1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE84C651CAB874E002A9D1A /* ViewController.m in Sources */,
+				5C0600021CACF47800028541 /* FJPickerView.m in Sources */,
 				5CE84C621CAB874E002A9D1A /* AppDelegate.m in Sources */,
+				5CE84C991CAB87BF002A9D1A /* FJSinglePickerView.m in Sources */,
 				5CE84C5F1CAB874E002A9D1A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +522,7 @@
 				5CE84C891CAB874E002A9D1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CE84C8A1CAB874E002A9D1A /* Build configuration list for PBXNativeTarget "FJPickerVIewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +531,7 @@
 				5CE84C8C1CAB874E002A9D1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CE84C8D1CAB874E002A9D1A /* Build configuration list for PBXNativeTarget "FJPickerVIewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +540,7 @@
 				5CE84C8F1CAB874E002A9D1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
