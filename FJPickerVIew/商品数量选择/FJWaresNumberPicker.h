@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol FJWaresNumberPickerDelegate <NSObject>
+typedef void(^WaresNumSelectBlock)(NSInteger num);
 
-- (void)selectedNumber:(NSInteger)number;
-
-@end
 @interface FJWaresNumberPicker : UIView
-@property (nonatomic, assign) id<FJWaresNumberPickerDelegate> delegate;
+
 - (instancetype)initWithMinNum:(NSInteger)minNum MaxNum:(NSInteger)maxNum;
 - (void)show;
+- (void)selectFinish:(WaresNumSelectBlock)block;
 @end

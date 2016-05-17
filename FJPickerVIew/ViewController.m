@@ -11,7 +11,7 @@
 #import "FJSinglePickerView.h"
 #import "FJWaresNumberPicker.h"
 
-@interface ViewController ()<FJWaresNumberPickerDelegate>
+@interface ViewController ()
 @property (nonatomic, strong) UILabel *label ;
 @property (nonatomic, strong) UILabel *label2 ;
 @end
@@ -61,13 +61,13 @@
 - (void)action2{
     FJWaresNumberPicker *pv = [[FJWaresNumberPicker alloc]initWithMinNum:1 MaxNum:15];
     pv.delegate = self;
+    [pv selectFinish:^(NSInteger num) {
+        self.label2.text = [NSString stringWithFormat:@"%ld",num];
+    }];
     [pv show];
 }
 
-#pragma mark - FJWaresNumberPickerDelegate
-- (void)selectedNumber:(NSInteger)number{
-    self.label2.text = [NSString stringWithFormat:@"%ld",number];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

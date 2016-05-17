@@ -23,7 +23,7 @@
 @property (nonatomic, assign) NSInteger maxNum;
 @property (nonatomic, assign) NSInteger currentNum;
 
-
+@property (nonnull, copy) WaresNumSelectBlock block;
 @end
 
 @implementation FJWaresNumberPicker
@@ -88,6 +88,9 @@
     }
     return self;
 }
+- (void)selectFinish:(WaresNumSelectBlock)block{
+    _block = block;
+}
 
 - (void)show{
     
@@ -95,10 +98,10 @@
 }
 
 - (void)confirm{
-    [self dismissPickerView];
-    if (self.delegate && [self.delegate respondsToSelector:@selector(selectedNumber:)]) {
-        [self.delegate selectedNumber:self.currentNum];
+    if (self.block) {
+        self.block(self.currentNum);
     }
+    [self dismissPickerView];
 }
 
 //出现
