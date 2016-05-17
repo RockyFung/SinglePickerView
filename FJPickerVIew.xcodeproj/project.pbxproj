@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5C0600021CACF47800028541 /* FJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0600011CACF47800028541 /* FJPickerView.m */; };
+		5C4741BF1CE47B180090ACCA /* FJWaresNumberPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4741BE1CE47B180090ACCA /* FJWaresNumberPicker.m */; };
+		5CAFDD6C1CEAE35700FF66FE /* 加-不可点@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CAFDD681CEAE35700FF66FE /* 加-不可点@2x.png */; };
+		5CAFDD6D1CEAE35700FF66FE /* 加@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CAFDD691CEAE35700FF66FE /* 加@2x.png */; };
+		5CAFDD6E1CEAE35700FF66FE /* 减-不可点@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CAFDD6A1CEAE35700FF66FE /* 减-不可点@2x.png */; };
+		5CAFDD6F1CEAE35700FF66FE /* 减@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CAFDD6B1CEAE35700FF66FE /* 减@2x.png */; };
+		5CAFDD721CEAE3D500FF66FE /* WaresNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAFDD711CEAE3D500FF66FE /* WaresNumberView.m */; };
 		5CE84C5F1CAB874E002A9D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C5E1CAB874E002A9D1A /* main.m */; };
 		5CE84C621CAB874E002A9D1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C611CAB874E002A9D1A /* AppDelegate.m */; };
 		5CE84C651CAB874E002A9D1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84C641CAB874E002A9D1A /* ViewController.m */; };
@@ -40,6 +46,14 @@
 /* Begin PBXFileReference section */
 		5C0600001CACF47800028541 /* FJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPickerView.h; sourceTree = "<group>"; };
 		5C0600011CACF47800028541 /* FJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPickerView.m; sourceTree = "<group>"; };
+		5C4741BD1CE47B180090ACCA /* FJWaresNumberPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJWaresNumberPicker.h; sourceTree = "<group>"; };
+		5C4741BE1CE47B180090ACCA /* FJWaresNumberPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJWaresNumberPicker.m; sourceTree = "<group>"; };
+		5CAFDD681CEAE35700FF66FE /* 加-不可点@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加-不可点@2x.png"; sourceTree = "<group>"; };
+		5CAFDD691CEAE35700FF66FE /* 加@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加@2x.png"; sourceTree = "<group>"; };
+		5CAFDD6A1CEAE35700FF66FE /* 减-不可点@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "减-不可点@2x.png"; sourceTree = "<group>"; };
+		5CAFDD6B1CEAE35700FF66FE /* 减@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "减@2x.png"; sourceTree = "<group>"; };
+		5CAFDD701CEAE3D500FF66FE /* WaresNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaresNumberView.h; sourceTree = "<group>"; };
+		5CAFDD711CEAE3D500FF66FE /* WaresNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaresNumberView.m; sourceTree = "<group>"; };
 		5CE84C5A1CAB874E002A9D1A /* FJPickerVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJPickerVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE84C5E1CAB874E002A9D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CE84C601CAB874E002A9D1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +100,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C4741BC1CE47AC60090ACCA /* 商品数量选择 */ = {
+			isa = PBXGroup;
+			children = (
+				5CAFDD681CEAE35700FF66FE /* 加-不可点@2x.png */,
+				5CAFDD691CEAE35700FF66FE /* 加@2x.png */,
+				5CAFDD6A1CEAE35700FF66FE /* 减-不可点@2x.png */,
+				5CAFDD6B1CEAE35700FF66FE /* 减@2x.png */,
+				5C4741BD1CE47B180090ACCA /* FJWaresNumberPicker.h */,
+				5C4741BE1CE47B180090ACCA /* FJWaresNumberPicker.m */,
+				5CAFDD701CEAE3D500FF66FE /* WaresNumberView.h */,
+				5CAFDD711CEAE3D500FF66FE /* WaresNumberView.m */,
+			);
+			path = "商品数量选择";
+			sourceTree = "<group>";
+		};
 		5CE84C511CAB874E002A9D1A = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +138,7 @@
 		5CE84C5C1CAB874E002A9D1A /* FJPickerVIew */ = {
 			isa = PBXGroup;
 			children = (
+				5C4741BC1CE47AC60090ACCA /* 商品数量选择 */,
 				5CE84C951CAB87BF002A9D1A /* SinglePickerView */,
 				5CE84C601CAB874E002A9D1A /* AppDelegate.h */,
 				5CE84C611CAB874E002A9D1A /* AppDelegate.m */,
@@ -268,6 +298,10 @@
 				5CE84C6A1CAB874E002A9D1A /* Assets.xcassets in Resources */,
 				5CE84C9A1CAB87BF002A9D1A /* FJSinglePickerView.xib in Resources */,
 				5CE84C681CAB874E002A9D1A /* Main.storyboard in Resources */,
+				5CAFDD6F1CEAE35700FF66FE /* 减@2x.png in Resources */,
+				5CAFDD6E1CEAE35700FF66FE /* 减-不可点@2x.png in Resources */,
+				5CAFDD6C1CEAE35700FF66FE /* 加-不可点@2x.png in Resources */,
+				5CAFDD6D1CEAE35700FF66FE /* 加@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +330,9 @@
 				5C0600021CACF47800028541 /* FJPickerView.m in Sources */,
 				5CE84C621CAB874E002A9D1A /* AppDelegate.m in Sources */,
 				5CE84C991CAB87BF002A9D1A /* FJSinglePickerView.m in Sources */,
+				5CAFDD721CEAE3D500FF66FE /* WaresNumberView.m in Sources */,
 				5CE84C5F1CAB874E002A9D1A /* main.m in Sources */,
+				5C4741BF1CE47B180090ACCA /* FJWaresNumberPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
