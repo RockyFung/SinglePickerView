@@ -126,11 +126,38 @@
     return self.arrayDataSource[row];
 }
 
-
+// 自定义设置列表
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+    // 设置分割线颜色
+    for(UIView *speartorView in pickerView.subviews)
+    {
+        if (speartorView.frame.size.height < 1)//取出分割线view
+        {
+            speartorView.backgroundColor = [UIColor orangeColor];//隐藏分割线
+        }
+    }
+    
+    //设置文字的属性（改变picker中字体的颜色大小）
+    UILabel *reasonLabel = [UILabel new];
+    reasonLabel.textAlignment = NSTextAlignmentCenter;
+    reasonLabel.text = self.arrayDataSource[row];
+    reasonLabel.font = [UIFont systemFontOfSize:16];
+    reasonLabel.textColor = [UIColor blackColor];
+    
+    //改变选中行颜色（设置一个全局变量，在选择结束后获取到当前显示行，记录下来，刷新picker）
+    if (row == self.pickerIndex) {
+        //改变当前显示行的字体颜色，如果你愿意，也可以改变字体大小，状态
+        reasonLabel.textColor = [UIColor orangeColor];
+    }
+    
+    return reasonLabel;
+}
 
 // 监听UIPickerView选中
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     self.pickerIndex = row;
+    // 刷新选中行
+    [pickerView reloadComponent:component];
 }
 
 @end
